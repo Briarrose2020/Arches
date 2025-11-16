@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Família Arch — Fandom Wiki</title>
+  <style>
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --muted:#666;
+      --accent:#7b2b2b;
+      --infobg:#fff4f4;
+      --text:#111;
+    }
+    *{box-sizing:border-box}
+    body{font-family: "Segoe UI", Roboto, Arial, sans-serif;background:var(--bg);color:var(--text);margin:0;padding:28px}
+    .container{max-width:1100px;margin:0 auto}
+    header{display:flex;align-items:center;gap:18px;margin-bottom:10px;flex-wrap:wrap}
+    h1{font-size:30px;margin:0}
+    .subtitle{color:var(--muted);font-size:13px}
+    .controls{margin-left:auto;display:flex;gap:10px;align-items:center}
+    .btn{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:8px 12px;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;font-size:13px;transition:0.2s}
+    .btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+    .btn:hover{opacity:0.85}
+    .page{display:flex;gap:24px;margin-top:14px;align-items:flex-start;flex-wrap:wrap}
+    .main{flex:1;min-width:300px}
+    .section{background:var(--card);padding:14px;border-radius:8px;margin-bottom:14px;border:1px solid #f2e9e9}
+    .image-box img{width:100%;border-radius:6px;display:block}
+    ul.clean{padding-left:1.2em;margin:0}
+    table.attrs{width:100%;border-collapse:collapse;margin-top:8px}
+    table.attrs td{border-top:1px solid #f7eef0;padding:8px}
+    .tags{font-size:13px;color:var(--muted)}
+    #theme-editor{
+      position:fixed;
+      bottom:18px;
+      right:18px;
+      background:var(--card);
+      padding:14px;
+      border-radius:10px;
+      box-shadow:0 8px 30px rgba(10,20,40,0.06);
+      z-index:999;
+      width:220px;
+      transform: translateY(30px);
+      opacity:0;
+      pointer-events:none;
+      transition:0.3s ease;
+    }
+    #theme-editor.active{
+      transform: translateY(0);
+      opacity:1;
+      pointer-events:auto;
+    }
+    #theme-editor h4{margin:0 0 8px;font-size:14px}
+    #theme-editor label{font-size:13px;color:var(--muted);display:block;margin-bottom:8px}
+    @media (max-width:980px){.page{flex-direction:column}}
+    a{color:var(--accent)}
+    hr{border:none;border-top:1px solid #f4e8e8;margin:12px 0}
+
+    body, h1, h2, h3, h4, h5, h6, p, li, a, span, div, table, tr, td, th {
+        font-family: "Serif Bold Italic", Georgia, "Times New Roman", serif;
+        font-style: italic;
+        font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1 contenteditable="false">Família Arch</h1>
+        <div class="subtitle" contenteditable="false">“De onde o Cosmos olha, os Arch respondem.”</div>
+      </div>
+
+      <div class="controls">
+        <button id="toggle-edit" class="btn">Editar</button>
+        <button id="save-manual" class="btn">Salvar</button>
+        <a id="reset-btn" class="btn" href="#">Restaurar</a>
+      </div>
+    </header>
+
+    <div class="page">
+
+      <main class="main">
+        <section class="section">
+          <h3>🕯️ Fundadores e Residências</h3>
+          <div data-editable="true">
+            <p><strong>Fundadores:</strong> Patricia Arch & Gonnor Thread</p>
+            <p><strong>Residências principais:</strong> Mansão Arch (Roma, Itália) e Mansão MerLune (Marselha, França)</p>
+            <p><strong>Brasão:</strong> Uma lua minguante prateada sobre espirais douradas.</p>
+            <p><strong>Símbolos:</strong> Espelho quebrado, pena negra, e a runa Arcana “Æth”.</p>
+            <p><strong>Lema familiar:</strong> <em>“O poder é herdado, mas o destino é roubado.”</em></p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>📜 História</h3>
+          <div data-editable="true">
+            <p>A Família Arch é uma das linhagens mágicas mais antigas registradas na Europa, originando-se no século IX com Patricia Arch e Gonnor Thread, que codificaram as doutrinas do Culto ao Cosmos. Durante a Idade Média, ocultaram-se entre plebeus e artesãos, sendo descritos como “os que movem a água e falam com a Lua”. No Renascimento, infiltraram-se em ordens ocultas e se tornaram conselheiros místicos de nobres italianos.</p>
+            <p>Em 1892, Herald Arch descobriu que qualquer filho de um Supremo herdaria inevitavelmente o dom arcano, consolidando a Supremacia dos Arch por gerações, até Sylvain Phil Arch, o primeiro herdeiro a não conceber, retornando o fardo ao acaso do universo.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>⚖️ Herança e Supremacia</h3>
+          <div data-editable="true">
+            <p>Os Arch são conhecidos por sua magia de Manipulação Espiritual e Vital, especialmente no equilíbrio entre vida, morte e destino. Carregam o Sangue Arcano, que amplifica a magia e aproxima os portadores da loucura e da imortalidade corrompida.</p>
+            <p>O atual patriarca, Tyson Arch, foi o primeiro Supremo Fantasma após desafiar as leis do Cosmos no Hotel Glasmayden (1942), marcando o início da era imortal dos Arch e o distanciamento dos antigos rituais lunares.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>🏰 Residências</h3>
+          <div data-editable="true">
+            <p><strong>Mansão Arch (Roma):</strong> Propriedade dos ramos distantes da família, abriga descendentes de primos e tios-avôs de Tyson, mantendo acervo de artefatos e grimórios proibidos.</p>
+            <p><strong>Mansão MerLune (Marselha):</strong> Atual sede do núcleo principal. Construída sobre um antigo observatório, é lar sereno e banhado por luz lunar, onde Sylvain Phil Arch ensina magia ética e mantém viva a tradição dos Arch.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>🌙 Árvore Genealógica</h3>
+          <div data-editable="true">
+            <p><strong>Século IX – Raízes Pagãs</strong></p>
+            <p>Patricia Arch ✦ Gonnor Thread</p>
+            <p><em>Descendência direta documentada após três gerações perdidas nos registros do Culto ao Cosmos.</em></p>
+
+            <p><strong>Século XIII – A Idade dos Espelhos</strong></p>
+            <p>Mara Arch ✦ Edric Falwen</p>
+            <p>Leandra Arch – Guardiã das Marés</p>
+
+            <p><strong>Século XV – A Era das Runas</strong></p>
+            <p>Leandra Arch ✦ (companheiro desconhecido)</p>
+            <p>Seraphiel Arch – Alquimista; fundou a Ordem dos Oito Véus</p>
+            <p>Tiber Arch – Expulso da ordem por praticar Magia do Caos</p>
+
+            <p><strong>Século XVII – A Noite de Sangue</strong></p>
+            <p>Tiber Arch ✦ Rosamund Völkir</p>
+            <p>Clement Arch – Iniciado na Ressurreição</p>
+            <p>Marian Arch – Bruxa eremita, criadora da Runa dos Ecos</p>
+
+            <p><strong>Século XIX – Supremacia Hereditária</strong></p>
+            <p>Herald Arch ✦ Eveline Marceau</p>
+            <p>Hannah Arch ✦ Benjamin Galant</p>
+            <p>Tyson Arch (n. 1920) – Supremo Fantasma</p>
+            <p>Thyme Arch – Mago necromante, traidor dos Arch</p>
+
+            <p><strong>Século XXI – O Fim do Ciclo</strong></p>
+            <p>Tyson Arch ✦ Gavrill Ludovik</p>
+            <p>Sylvain Phil Arch (n. 2040) – Clarividente e professor de ética mágica</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>🕊️ Legado</h3>
+          <div data-editable="true">
+            <p>Os Arch permanecem como um nome temido e reverenciado. De mestres das marés a manipuladores do destino, sua história mistura glória, tragédia e imortalidade. Em Marselha, Sylvain Phil Arch tenta restaurar o equilíbrio que seus antepassados corromperam, enquanto Tyson observa o mundo desabar, certo de que o caos é o destino natural do sangue Arch.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>📸 Imagens da Família</h3>
+          <div class="image-box">
+            <img src="https://cdn.discordapp.com/attachments/1430249832525598752/1439653925346349076/Picsart_25-11-16_11-04-11-593.jpg?ex=691b4db3&is=6919fc33&hm=47a598075bc432fece2d67e94ad443571299803e20b2f3b8a25c2f33fad94130&" alt="Casal Arch">
+            <p style="font-size:12px;color:var(--muted);margin-top:4px;">Tyson Arch e Sylvain Phil Arch juntos, representando a linhagem ativa da família.</p>
+          </div>
+          <div class="image-box" style="margin-top:12px;">
+            <img src="https://cdn.discordapp.com/attachments/1430249832525598752/1439655185818452130/Picsart_25-11-16_13-35-24-176.jpg?ex=691b4edf&is=6919fd5f&hm=d0f7dc8a0249940fca97462331d56079b8e3b168fc00478acb09625543c0b325&" alt="Trio Arch">
+            <p style="font-size:12px;color:var(--muted);margin-top:4px;">Gavrill Ludovik, Tyson Arch e Sylvain Phil Arch em um dia nevado no jardim de roseiras vermelhas.</p>
+          </div>
+        </section>
+
+<section class="section">
+  <h3>👥 Membros (disponíveis)</h3>
+  <ul class="clean">
+    <li><a href="tyson.html">Tyson Arch</a></li>
+    <li><a href="sylvain2.html">Sylvain Arch</a></li>
+    <li><a href="gavrill.html">Gavriil Ludovik</a></li>
+  </ul>
+</section>
+
+
+      </main>
+    </div>
+
+    <footer>
+      <div class="tags">Categoria: Família | Linhagem Arcana Arch | Roma & Marselha</div>
+      <div style="margin-top:8px">Página gerada automaticamente. Edite livremente usando o modo de edição.</div>
+    </footer>
+  </div>
+
+  <!-- theme editor -->
+  <div id="theme-editor" aria-hidden="false">
+    <h4>🎨 Ajustar Cores</h4>
+    <label>Fundo: <input id="color-bg" type="color" value="#f6f7f9"></label>
+    <label>Cartões: <input id="color-card" type="color" value="#ffffff"></label>
+    <label>Texto Secundário: <input id="color-muted" type="color" value="#666666"></label>
+    <label>Acento: <input id="color-accent" type="color" value="#7b2b2b"></label>
+    <label>Infobox: <input id="color-infobg" type="color" value="#fff4f4"></label>
+    <div style="margin-top:8px;text-align:right">
+      <button id="save-theme" class="btn primary">Salvar Tema</button>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    const toggleBtn = document.getElementById('toggle-edit');
+    const saveBtn = document.getElementById('save-manual');
+    const resetBtn = document.getElementById('reset-btn');
+    const themePanel = document.getElementById('theme-editor');
+
+    function nodesEditable(){ return document.querySelectorAll('[data-editable="true"]'); }
+
+    function setEditing(on){
+      nodesEditable().forEach(n=> n.setAttribute('contenteditable', on?'true':'false'));
+      toggleBtn.innerText = on ? 'Fechar edição' : 'Editar';
+      // mostra ou esconde o painel de cores com animação
+      if(on) themePanel.classList.add('active');
+      else themePanel.classList.remove('active');
+    }
+
+    function saveAll(){
+      const nodes = nodesEditable();
+      const out = {};
+      nodes.forEach((n,i)=> out[i]=n.innerHTML);
+      localStorage.setItem('arch_family_v1', JSON.stringify(out));
+      saveBtn.innerText = 'Salvo ✓';
+      setTimeout(()=> saveBtn.innerText = 'Salvar',1100);
+    }
+
+    function loadSaved(){
+      try{
+        const raw = localStorage.getItem('arch_family_v1');
+        if(!raw) return;
+        const data = JSON.parse(raw);
+        const nodes = nodesEditable();
+        nodes.forEach((n,i)=> { if(data[i] !== undefined) n.innerHTML = data[i]; });
+      }catch(e){ console.warn(e); }
+    }
+
+    toggleBtn.addEventListener('click', ()=> {
+      const editing = toggleBtn.innerText !== 'Editar';
+      setEditing(!editing);
+    });
+
+    saveBtn.addEventListener('click', saveAll);
+    resetBtn.addEventListener('click', (e)=> {
+      e.preventDefault();
+      if(confirm('Restaurar conteúdo original e remover alterações salvas?')) {
+        localStorage.removeItem('arch_family_v1');
+        location.reload();
+      }
+    });
+
+    window.addEventListener('beforeunload', saveAll);
+
+    const themeMap = {'color-bg':'--bg','color-card':'--card','color-muted':'--muted','color-accent':'--accent','color-infobg':'--infobg'};
+    Object.keys(themeMap).forEach(id=>{
+      const el = document.getElementById(id);
+      if(!el) return;
+      el.addEventListener('input', e=> document.documentElement.style.setProperty(themeMap[id], e.target.value));
+    });
+    document.getElementById('save-theme').addEventListener('click', ()=>{
+      Object.values(themeMap).forEach(v => localStorage.setItem(v, getComputedStyle(document.documentElement).getPropertyValue(v)));
+      const b = document.getElementById('save-theme');
+      b.innerText = 'Tema salvo ✓';
+      setTimeout(()=> b.innerText = 'Salvar Tema', 1100);
+    });
+
+    document.addEventListener('DOMContentLoaded', ()=>{
+      ['--bg','--card','--muted','--accent','--infobg'].forEach(v=>{
+        const val = localStorage.getItem(v);
+        if(val) document.documentElement.style.setProperty(v, val);
+      });
+      loadSaved();
+      setEditing(false); // inicia com edição desligada, painel escondido
+    });
+
+  })();
+  </script>
+</body>
+</html>
+

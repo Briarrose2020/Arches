@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tyson Arch — Fandom Wiki</title>
+  <style>
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --muted:#666;
+      --accent:#7b2b2b;
+      --infobg:#fff4f4;
+      --text:#111;
+    }
+    *{box-sizing:border-box}
+    body{font-family: "Segoe UI", Roboto, Arial, sans-serif;background:var(--bg);color:var(--text);margin:0;padding:28px}
+    .container{max-width:1100px;margin:0 auto}
+    header{display:flex;align-items:center;gap:18px;margin-bottom:10px}
+    h1{font-size:30px;margin:0}
+    .subtitle{color:var(--muted);font-size:13px}
+    .controls{margin-left:auto;display:flex;gap:10px;align-items:center}
+    .btn{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:8px 12px;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;font-size:13px}
+    .btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+    .page{display:flex;gap:24px;margin-top:14px;align-items:flex-start}
+    .main{flex:1}
+    .infobox{width:320px;background:var(--card);border:1px solid #e8dede;padding:14px;border-radius:8px;align-self:flex-start;box-shadow:0 6px 18px rgba(80,30,30,0.04);position:sticky;top:20px}
+    .infobox h2{margin:10px 0 6px;font-size:18px}
+    .infobox .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .section{background:var(--card);padding:14px;border-radius:8px;margin-bottom:14px;border:1px solid #f2e9e9}
+    .section h3{margin-top:0}
+    .image-box img{width:100%;border-radius:6px;display:block}
+    ul.clean{padding-left:1.2em;margin:0}
+    table.attrs{width:100%;border-collapse:collapse;margin-top:8px}
+    table.attrs td{border-top:1px solid #f7eef0;padding:8px}
+    .tags{font-size:13px;color:var(--muted)}
+    #theme-editor{position:fixed; bottom:18px; right:18px; background:var(--card); padding:14px; border-radius:10px; box-shadow:0 8px 30px rgba(10,20,40,0.06); z-index:999; width:220px; display:none}
+    #theme-editor h4{margin:0 0 8px;font-size:14px}
+    #theme-editor label{font-size:13px;color:var(--muted);display:block;margin-bottom:8px}
+    @media (max-width:980px){.page{flex-direction:column}.infobox{width:100%;position:static}}
+    a{color:var(--accent)}
+    hr{border:none;border-top:1px solid #f4e8e8;margin:12px 0}
+
+    body, h1, h2, h3, h4, h5, h6, p, li, a, span, div, table, tr, td, th {
+      font-family: "Serif Bold Italic", Georgia, "Times New Roman", serif;
+      font-style: italic;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1 contenteditable="false">Tyson Arch</h1>
+        <div class="subtitle" contenteditable="false">“O poder não se conquista — ele me reconhece.” — Tyson Arch</div>
+      </div>
+
+      <div class="controls">
+        <button id="toggle-edit" class="btn">Editar</button>
+        <button id="save-manual" class="btn">Salvar</button>
+        <a id="reset-btn" class="btn" href="#">Restaurar</a>
+      </div>
+    </header>
+
+    <div class="page">
+      <!-- INF OBOX -->
+      <aside class="infobox" aria-label="Infobox de Tyson Arch">
+        <div class="image-box" style="text-align:center; margin-bottom:10px;">
+          <img id="tyson-img" src="https://cdn.discordapp.com/attachments/1430249832525598752/1439622551029551114/Picsart_25-11-16_10-46-02-475.jpg" alt="Tyson Arch" style="object-fit:cover;border-radius:6px">
+        </div>
+
+        <h2>🕯️ Informações</h2>
+        <div class="meta">Linhagem Arcana Arch — Herdeiro Supremo</div>
+
+        <dl>
+          <dt>Nome completo</dt>
+          <dd data-editable="true">Tyson Arch</dd>
+
+          <dt>Afiliação</dt>
+          <dd data-editable="true">Linhagem Arcana Arch</dd>
+
+          <dt>Espécie</dt>
+          <dd data-editable="true">Humano (feiticeiro)</dd>
+
+          <dt>Origem</dt>
+          <dd data-editable="true">Roma, Itália</dd>
+
+          <dt>Alinhamento</dt>
+          <dd data-editable="true">Caótico elegante</dd>
+
+          <dt>Títulos</dt>
+          <dd data-editable="true">Herdeiro Supremo; Arquifeiticeiro do Caos e da Fortuna</dd>
+
+          <dt>Status</dt>
+          <dd data-editable="true">Vivo</dd>
+        </dl>
+
+        <hr>
+
+        <h3>🔮 Pertences</h3>
+        <ul>
+          <li data-editable="true">Grimório vermelho ancestral</li>
+          <li data-editable="true">Anel Arch (símbolo da linhagem)</li>
+          <li data-editable="true">Casaco ritualístico</li>
+          <li data-editable="true">Medalhão de Fortuna</li>
+        </ul>
+
+        <hr>
+        <h3>⚖️ Atributos</h3>
+        <table class="attrs" aria-hidden="false">
+          <tr><td>Corpo</td><td><strong data-editable="true">4</strong></td></tr>
+          <tr><td>Saúde</td><td><strong data-editable="true">6</strong></td></tr>
+          <tr><td>Espírito</td><td><strong data-editable="true">9</strong></td></tr>
+          <tr><td>Postura</td><td><strong data-editable="true">8</strong></td></tr>
+          <tr><td>Mente</td><td><strong data-editable="true">7</strong></td></tr>
+          <tr><td>Vontade</td><td><strong data-editable="true">6</strong></td></tr>
+          <tr><td><strong>Total</strong></td><td><strong data-editable="true">40</strong></td></tr>
+        </table>
+      </aside>
+
+      <!-- MAIN -->
+      <main class="main">
+        <section class="section">
+          <h3>📜 História</h3>
+          <div data-editable="true">
+            <p>Herdeiro supremo da ancestral família de feiticeiros de Roma, <strong>Tyson Arch</strong> nasceu sob o selo da <em>Linhagem Arcana Arch</em>, um pacto antigo entre os primeiros magos e as entidades gêmeas do <em>Caos</em> e da <em>Fortuna</em>. Desde cedo, demonstrou domínio sobre as artes arcanas mais puras — as chamadas <strong>Sete Maravilhas</strong> — e uma inclinação para manipular probabilidades e alterar o fluxo dos eventos a seu favor.</p>
+
+            <p>Sua habilidade única, a <em>Distorsão Sutil da Realidade</em>, altera probabilidades, faz coincidências convergirem e transforma o improvável em inevitável — um talento que o colocaria acima de meros mortais e magos. Sua presença inspira tanto reverência quanto medo: elegante, cruel e irresistivelmente carismático.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>🎭 Perícias</h3>
+          <ul class="clean" data-editable="true">
+            <li><strong>Carisma</strong> — presença dominante e irresistível.</li>
+            <li><strong>Intimidação</strong> — o olhar é sentença.</li>
+            <li><strong>História das Bruxas</strong> — domínio sobre linhagens e maldições.</li>
+            <li><strong>Engano</strong> — manipulação de verdades com elegância.</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h3>✨ Magia — As Sete Maravilhas</h3>
+          <div data-editable="true">
+            <ol>
+              <li><strong>Telecinese</strong> — Move objetos e destrói com a mente; Tyson usa a telecinese de forma cirúrgica e muitas vezes teatral.</li>
+              <li><strong>Concilium</strong> — Dobra vontades, implanta sugestões e apaga memórias seletivas.</li>
+              <li><strong>Pirocinese</strong> — Controle do fogo; as chamas de Tyson têm tonalidade vinho tinto, quase sempre presentes em seus rituais.</li>
+              <li><strong>Teletransporte</strong> — Passagem entre locais e planos com precisão.</li>
+              <li><strong>Adivinhação</strong> — Capta possibilidades futuras e escolhe o andamento dos acontecimentos.</li>
+              <li><strong>Descescum</strong> (Projeção da Consciência) — Projeta fragmentos da alma para outros planos e manipula ecos de outras realidades.</li>
+              <li><strong>Vitalum Vitalis</strong> (Manipulação da Vida e da Morte) — Poder de retirar ou conceder vida em escalas limitadas, usado com parcimônia e espetáculo.</li>
+            </ol>
+
+            <h4>Habilidade Única — <em>Distorsão Sutil da Realidade</em></h4>
+            <p data-editable="true">Tyson inclina probabilidades e altera a teia de eventos para favorecer suas intenções. Seja em um duelo arcano ou numa aposta política, o improvável tende a se tornar o percurso mais provável quando ele age.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>💀 Personalidade</h3>
+          <div data-editable="true">
+            <p>Tyson é o arquétipo do <em>caótico elegante</em>: egoísta e calculista, porém dotado de um carisma que enfeitiça multidões. Ele vê o poder como algo que o reconhece — não como algo a ser conquistado. Cruel quando necessário, sedutor por natureza, é tanto líder quanto agente de caos nas disputas sociais e mágicas.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>🕯️ Curiosidades</h3>
+          <ul class="clean" data-editable="true">
+            <li>Diz-se que nenhuma profecia consegue prever seu fim com precisão.</li>
+            <li>As chamas que conjura têm tonalidade avermelhada como vinho.</li>
+            <li>O sobrenome <em>Arch</em> (ponte) simboliza a ligação entre sorte e destino que ele manipula.</li>
+            <li>Sua presença altera lançamentos de dados e resultados de rituais alheios (lenda popular entre magos).</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h3>🔗 Referências & inspirações</h3>
+          <p data-editable="true">Elementos desta página foram inspirados por conceitos de egoísmo, telecinese, pirocinese, telepatia/projeção da consciência, manipulação da vida/morte e práticas de adivinhação — combinados e ajustados para caber no universo da Linhagem Arcana Arch.</p>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer com links externos -->
+    <footer>
+      <div class="tags">Categoria: Personagens | Linhagem Arcana Arch | Roma</div>
+      <div style="margin-top:8px">Página gerada automaticamente. Edite livremente usando o modo de edição.</div>
+
+      <hr>
+
+      <div class="section" style="padding:12px;border-radius:8px;">
+        <h3>🔗 Links externos</h3>
+        <ul>
+          <li><a href="https://pt.wikipedia.org/wiki/Ego%C3%ADsmo" target="_blank" rel="noopener">Egoísmo — Wikipédia</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Telecinesia" target="_blank" rel="noopener">Telecinese — Wikipédia</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Pirocinese" target="_blank" rel="noopener">Pirocinese — Wikipédia</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Telepatia" target="_blank" rel="noopener">Telepatia — Wikipédia</a></li>
+          <li><a href="https://superpoderes.fandom.com/wiki/Manipula%C3%A7%C3%A3o_da_Vida_e_da_Morte" target="_blank" rel="noopener">Manipulação da Vida e da Morte — Superpoderes Wiki</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Proje%C3%A7%C3%A3o_da_consci%C3%AAncia" target="_blank" rel="noopener">Projeção da Consciência — Wikipédia</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Transmuta%C3%A7%C3%A3o" target="_blank" rel="noopener">Transmutação — Wikipédia</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Clarivid%C3%AAncia" target="_blank" rel="noopener">Clarividência — Wikipédia</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Adivinha%C3%A7%C3%A3o" target="_blank" rel="noopener">Adivinhação — Wikipédia</a></li>
+          <li><a href="https://americanhorrorstory.fandom.com/wiki/Category:Witches/The_Supreme_Witch" target="_blank" rel="noopener">Inspiração: The Supreme Witch — AHS Wiki</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <main class="main">
+        <!-- conteúdo das seções mantém igual ao seu arquivo original -->
+      </main>
+    </div>
+
+    <!-- theme editor panel -->
+    <div id="theme-editor">
+      <h4>🎨 Ajustar Cores</h4>
+      <label>Fundo: <input id="color-bg" type="color" value="#f6f7f9"></label>
+      <label>Cartões: <input id="color-card" type="color" value="#ffffff"></label>
+      <label>Texto Secundário: <input id="color-muted" type="color" value="#666666"></label>
+      <label>Acento: <input id="color-accent" type="color" value="#7b2b2b"></label>
+      <label>Infobox: <input id="color-infobg" type="color" value="#fff4f4"></label>
+      <div style="margin-top:8px;text-align:right">
+        <button id="save-theme" class="btn primary">Salvar Tema</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+  (function(){
+    const toggleBtn = document.getElementById('toggle-edit');
+    const saveBtn = document.getElementById('save-manual');
+    const resetBtn = document.getElementById('reset-btn');
+    const themePanel = document.getElementById('theme-editor');
+
+    function nodesEditable(){ return document.querySelectorAll('[data-editable="true"]'); }
+
+    function setEditing(on){
+      nodesEditable().forEach(n=> n.setAttribute('contenteditable', on?'true':'false'));
+      toggleBtn.innerText = on ? 'Fechar edição' : 'Editar';
+      themePanel.style.display = on ? 'block' : 'none';
+    }
+
+    function saveAll(){
+      const out = {};
+      nodesEditable().forEach((n,i)=> out[i]=n.innerHTML);
+      out._img = document.getElementById('tyson-img').src;
+      localStorage.setItem('tyson_v1', JSON.stringify(out));
+      saveBtn.innerText = 'Salvo ✓';
+      setTimeout(()=> saveBtn.innerText='Salvar',1100);
+    }
+
+    function loadSaved(){
+      const raw = localStorage.getItem('tyson_v1');
+      if(!raw) return;
+      const data = JSON.parse(raw);
+      nodesEditable().forEach((n,i)=> { if(data[i]!==undefined) n.innerHTML=data[i]; });
+      if(data._img) document.getElementById('tyson-img').src = data._img;
+    }
+
+    toggleBtn.addEventListener('click', ()=> setEditing(toggleBtn.innerText==='Editar'));
+    saveBtn.addEventListener('click', saveAll);
+    resetBtn.addEventListener('click', e=>{
+      e.preventDefault();
+      localStorage.removeItem('tyson_v1');
+      location.reload();
+    });
+
+    // Theme inputs
+    const themeMap = {'color-bg':'--bg','color-card':'--card','color-muted':'--muted','color-accent':'--accent','color-infobg':'--infobg'};
+    Object.keys(themeMap).forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el) return;
+      el.addEventListener('input', e=> document.documentElement.style.setProperty(themeMap[id], e.target.value));
+    });
+    document.getElementById('save-theme').addEventListener('click', ()=>{
+      Object.values(themeMap).forEach(v=>localStorage.setItem(v,getComputedStyle(document.documentElement).getPropertyValue(v)));
+      const b = document.getElementById('save-theme'); b.innerText='Tema salvo ✓';
+      setTimeout(()=>b.innerText='Salvar Tema',1100);
+    });
+
+    // Load theme & content
+    document.addEventListener('DOMContentLoaded', ()=>{
+      ['--bg','--card','--muted','--accent','--infobg'].forEach(v=>{
+        const val = localStorage.getItem(v);
+        if(val) document.documentElement.style.setProperty(v,val);
+      });
+      loadSaved();
+      setEditing(false);
+    });
+
+  })();
+  </script>
+</body>
+</html>

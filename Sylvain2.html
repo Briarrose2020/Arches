@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sylvain Phil Arch — Fandom Wiki</title>
+  <style>
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --muted:#666;
+      --accent:#4b6cb7;
+      --infobg:#f0f4ff;
+      --text:#111;
+    }
+
+    /* Base */
+    *{box-sizing:border-box}
+    body{
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      margin:0;
+      padding:28px;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:1100px;margin:0 auto}
+
+    /* Header */
+    header{display:flex;align-items:center;gap:18px;margin-bottom:10px}
+    .brand{display:flex;gap:14px;align-items:center}
+    h1{font-size:30px;margin:0}
+    .subtitle{color:var(--muted);font-size:13px}
+
+    /* Page layout */
+    .page{display:flex;gap:24px;margin-top:14px;align-items:flex-start}
+    .main{flex:1}
+    .infobox{
+      width:320px;background:var(--card);
+      border:1px solid #e2e6ef;
+      padding:14px;border-radius:8px;
+      align-self:flex-start;
+      box-shadow:0 6px 18px rgba(30,40,80,0.04);
+      position:sticky; top:20px;
+    }
+    .infobox h2{margin:10px 0 6px;font-size:18px}
+    .infobox .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .infobox dt{font-weight:700;margin-top:8px}
+    .infobox dd{margin:0 0 8px}
+
+    /* Sections */
+    .section{background:var(--card);padding:14px;border-radius:8px;margin-bottom:14px;border:1px solid #e9ecf5}
+    .section h3{margin-top:0}
+    ul.clean{padding-left:1.2em;margin:0}
+    .skills li, .inventory li{margin-bottom:6px}
+
+    table.attrs{width:100%;border-collapse:collapse;margin-top:8px}
+    table.attrs td{border-top:1px solid #eef2fb;padding:8px}
+    table.attrs tr:first-child td{border-top:none}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+    /* Buttons / UI */
+    .controls{margin-left:auto;display:flex;gap:10px;align-items:center}
+    .btn{
+      background:transparent;border:1px solid var(--accent);
+      color:var(--accent);padding:8px 12px;border-radius:6px;
+      cursor:pointer;font-weight:600;text-decoration:none;font-size:13px;
+    }
+    .btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+    .btn.icon{padding:6px 8px;font-size:14px}
+
+    /* Image */
+    .infobox img{width:100%;border-radius:6px;display:block;margin-bottom:10px}
+    .image-placeholder{width:100%;height:200px;border-radius:6px;background:linear-gradient(180deg,#f7f8fb,#ffffff);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;border:1px dashed #e6e9f2;padding:8px;text-align:center}
+
+    /* theme editor panel */
+    #theme-editor{position:fixed; bottom:18px; right:18px; background:var(--card); padding:14px; border-radius:10px; box-shadow:0 8px 30px rgba(10,20,40,0.08); z-index:999; width:220px}
+    #theme-editor h4{margin:0 0 8px;font-size:14px}
+    #theme-editor label{font-size:13px;color:var(--muted);display:block;margin-bottom:8px}
+    #theme-editor input[type="color"]{vertical-align:middle;margin-left:6px}
+
+    /* responsiveness */
+    @media (max-width:980px){
+      .page{flex-direction:column}
+      .infobox{width:100%;position:static}
+      #theme-editor{position:fixed; right:10px; bottom:10px; width:200px}
+    }
+
+    a{color:var(--accent)}
+    hr{border:none;border-top:1px solid #eef2fb;margin:12px 0}
+    .tags{font-size:13px;color:var(--muted)}
+    .external-links ul{list-style:disc;margin-left:1.1em;padding-left:0}
+
+body, h1, h2, h3, h4, h5, h6, p, li, a, span, div, table, tr, td, th {
+    font-family: "Serif Bold Italic", Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div>
+          <h1 contenteditable="false">Sylvain Phil Arch</h1>
+          <div class="subtitle" contenteditable="false">"Enquanto meu pai brinca com a ruína, eu ensino a cura." — Sylvain Arch</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="toggle-edit" class="btn">Editar</button>
+        <button id="save-manual" class="btn icon">Salvar</button>
+        <a id="reset-btn" class="btn" href="#" title="Restaurar conteúdo salvo">Restaurar</a>
+      </div>
+    </header>
+
+    <div class="page">
+      <!-- INF OBOX -->
+<aside class="infobox" aria-label="Infobox do personagem" style="overflow:hidden;">
+    <div style="text-align:center; margin-bottom:12px;">
+        <img src="https://cdn.discordapp.com/attachments/1430249832525598752/1439466006451060877/Picsart_25-11-16_00-53-17-235.jpg?ex=691a9eaf&is=69194d2f&hm=9d8d081bb9a57db13a943ee1a8097cd2762df51b0c2d6f9bb2c6f065725775ac&" 
+             alt="Sylvain Phil Arch" 
+             style="width:100%; border-radius:6px; object-fit:cover;">
+    </div>
+
+    <h2>🕯️ Informações</h2>
+    <div class="meta">Ficha resumida — Linhagem Arcana Arch</div>
+
+    <dl>
+      <dt>Nome completo</dt>
+      <dd data-editable="true">Sylvain Phil Arch</dd>
+
+      <dt>Afiliação</dt>
+      <dd data-editable="true">Linhagem Arcana Arch</dd>
+
+      <dt>Espécie</dt>
+      <dd data-editable="true">Humano (feiticeiro)</dd>
+
+      <dt>Origem</dt>
+      <dd data-editable="true">Marselha, França</dd>
+
+      <dt>Alinhamento</dt>
+      <dd data-editable="true">Neutro benevolente</dd>
+
+      <dt>Títulos</dt>
+      <dd data-editable="true">O Clarividente de MerLune; Guardião das Linhas do Destino</dd>
+
+      <dt>Status</dt>
+      <dd data-editable="true">Vivo</dd>
+
+      <dt>Riqueza</dt>
+      <dd data-editable="true">Igual à de Tyson Arch — herança compartilhada</dd>
+    </dl>
+
+    <hr>
+    <h3>🔮 Pertences</h3>
+    <ul>
+      <li data-editable="true">Grimório celta (capa verde)</li>
+      <li data-editable="true">Anel lunar (amplificador de visões)</li>
+      <li data-editable="true">Pingente de prata líquida (herança de Gabriel Ludovik)</li>
+      <li data-editable="true">Pena de corvo (rituais de leitura astral)</li>
+    </ul>
+
+    <hr>
+    <h3>⚖️ Atributos</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:13px">
+      <tr><td>Corpo</td><td><strong>5</strong></td></tr>
+      <tr><td>Saúde</td><td><strong>6</strong></td></tr>
+      <tr><td>Espírito</td><td><strong>9</strong></td></tr>
+      <tr><td>Postura</td><td><strong>6</strong></td></tr>
+      <tr><td>Mente</td><td><strong>8</strong></td></tr>
+      <tr><td>Vontade</td><td><strong>6</strong></td></tr>
+      <tr style="border-top:2px solid #eef2fb"><td><strong>Total</strong></td><td><strong>40</strong></td></tr>
+    </table>
+</aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main">
+        <!-- História (unificada - estilo híbrido) -->
+        <section class="section">
+          <h3>📜 História</h3>
+          <div data-editable="true">
+            <p><strong>Sylvain Phil Arch</strong> é herdeiro da <em>Linhagem Arcana Arch</em>. Filho de <strong>Tyson Arch</strong> e de <strong>Gabriel Ludovik</strong>, teve a infância marcada por cortes entre a afeição materna e a tutela rígida do pai. Retirado da mãe quando criança, foi enviado a um internato na Noruega, onde aprendeu disciplina, etiqueta e equilíbrio espiritual — formação que moldou sua postura conciliadora e metódica.</p>
+
+            <p>Na vida adulta, Sylvain atuou como professor e gestor em <strong>MerLune</strong>, uma instituição dedicada à magia restauradora e à alquimia espiritual. Conhecido por combinar práticas místicas com um método quase científico, ele acredita que o poder deve servir à harmonia e à cura, não ao domínio. Sua prática une alquimia, rituais celtas e técnicas de purificação.</p>
+          </div>
+        </section>
+
+        <!-- Perícias -->
+        <section class="section">
+          <h3>🎭 Perícias</h3>
+          <ul class="skills clean" data-editable="true">
+            <li><strong>Convicção</strong> — defende firmemente seus ideais e o equilíbrio mágico.</li>
+            <li><strong>Etiqueta</strong> — educação refinada do internato norueguês.</li>
+            <li><strong>História das Bruxas</strong> — amplo conhecimento sobre linhagens e feitiços perdidos.</li>
+            <li><strong>Empatia Social</strong> — percebe emoções e intenções ocultas com facilidade.</li>
+          </ul>
+        </section>
+
+        <!-- Magia -->
+        <section class="section">
+          <h3>✨ Magia e Habilidade Especial</h3>
+          <div data-editable="true">
+            <h4>Domínio: <em>Adivinhação</em></h4>
+            <p>Sylvain domina a adivinhação em alto grau: traça <strong>linhas de destino</strong>, interpreta símbolos ocultos e lê o <strong>tempo espiritual</strong>. Suas leituras combinam observação, alquimia e instrumentos que calibram visões para fins curativos.</p>
+
+            <h4>Habilidade Única: <em>Clarividência Avançada</em></h4>
+            <p>Capaz de vislumbrar passado, presente e fragmentos do futuro, Sylvain interpreta fluxos mágicos e padrões cósmicos. As visões, entretanto, o atormentam — muitas vezes mostram eventos dolorosos que parecem inevitáveis, o que define grande parte de sua luta interior.</p>
+
+            <h4>Influências Mágicas</h4>
+            <ul class="clean">
+              <li>Alquimia — reações mágicas para purificação e cura.</li>
+              <li>Magia Celta — energias naturais e símbolos druídicos.</li>
+              <li>Magia do Caos — compreensão do Caos como matriz de transformação.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Personalidade -->
+        <section class="section">
+          <h3>💀 Personalidade</h3>
+          <div data-editable="true">
+            <p>Sylvain é a síntese entre razão e compaixão: sereno, protetor e empático. Prefere restaurar ao invés de destruir. Embora carregue o sobrenome Arch, ele se opõe ao legado tirânico de seu pai e busca transformar essa herança em regeneração. Sua postura é nobre, seu olhar é suave, e suas palavras carregam a calma de quem já viu sombras e escolheu a luz.</p>
+
+            <p>Inspirações e contrastes (na personalidade pública): figuras arquetípicas de autoridade feminina endurecida e maternalidade curativa — conflitos que espelham sua relação com Tyson Arch.</p>
+          </div>
+        </section>
+
+        <!-- Etimologia -->
+        <section class="section">
+          <h3>🌙 Etimologia</h3>
+          <p data-editable="true">O nome "Sylvain" vem do francês e remete a “habitante da floresta” ou “espírito dos bosques”, simbolizando pureza, vida e conexão com a natureza — traços centrais à sua visão curativa.</p>
+        </section>
+
+        <!-- Curiosidades -->
+        <section class="section">
+          <h3>🕯️ Curiosidades</h3>
+          <ul class="clean" data-editable="true">
+            <li>Possui o mesmo nível de fortuna que Tyson Arch, mas evita ostentação.</li>
+            <li>Descendência: escocesa (avô Benjamin Galant) e russa (mãe Gabriel Ludovik).</li>
+            <li>Gabriel Ludovik (romanizado de Gavriil) foi capitão de tropa russa; Sylvain nasceu após um feitiço de conversão feito por Tyson.</li>
+            <li>Passou boa parte da infância em Marselha; herdou gosto por literatura francesa.</li>
+            <li>Vê Tyson como um fardo a ser compreendido — e talvez curado um dia.</li>
+          </ul>
+        </section>
+
+      </main>
+    </div>
+
+    <!-- Footer com links externos -->
+    <footer>
+      <div class="tags">Categoria: Personagens | Linhagem Arcana Arch | MerLune</div>
+      <div style="margin-top:8px">Template gerado automaticamente. Sinta-se livre para editar, ajustar imagens e links internos para integrá-lo à sua wiki.</div>
+
+      <hr>
+
+      <div class="external-links section" style="padding:12px;border-radius:8px;">
+        <h3>🔗 Links externos</h3>
+        <ul>
+          <li><a href="https://pt.wikipedia.org/wiki/Paganismo" target="_blank" rel="noopener">Paganismo — Wikipédia</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Clarivid%C3%AAncia" target="_blank" rel="noopener">Clarividência — Wikipédia</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Magia" target="_blank" rel="noopener">Magia — Wikipédia</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+
+  <main class="main">
+        <!-- conteúdo das seções mantém igual ao seu arquivo original -->
+      </main>
+    </div>
+
+    <!-- theme editor panel -->
+    <div id="theme-editor">
+      <h4>🎨 Ajustar Cores</h4>
+      <label>Fundo: <input id="color-bg" type="color" value="#f6f7f9"></label>
+      <label>Cartões: <input id="color-card" type="color" value="#ffffff"></label>
+      <label>Texto Secundário: <input id="color-muted" type="color" value="#666666"></label>
+      <label>Acento: <input id="color-accent" type="color" value="#7b2b2b"></label>
+      <label>Infobox: <input id="color-infobg" type="color" value="#fff4f4"></label>
+      <div style="margin-top:8px;text-align:right">
+        <button id="save-theme" class="btn primary">Salvar Tema</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+  (function(){
+    const toggleBtn = document.getElementById('toggle-edit');
+    const saveBtn = document.getElementById('save-manual');
+    const resetBtn = document.getElementById('reset-btn');
+    const themePanel = document.getElementById('theme-editor');
+
+    function nodesEditable(){ return document.querySelectorAll('[data-editable="true"]'); }
+
+    function setEditing(on){
+      nodesEditable().forEach(n=> n.setAttribute('contenteditable', on?'true':'false'));
+      toggleBtn.innerText = on ? 'Fechar edição' : 'Editar';
+      themePanel.style.display = on ? 'block' : 'none';
+    }
+
+    function saveAll(){
+      const out = {};
+      nodesEditable().forEach((n,i)=> out[i]=n.innerHTML);
+      out._img = document.getElementById('wikiEdit').src;
+      localStorage.setItem('wikiEdit_v1', JSON.stringify(out));
+      saveBtn.innerText = 'Salvo ✓';
+      setTimeout(()=> saveBtn.innerText='Salvar',1100);
+    }
+
+    function loadSaved(){
+      const raw = localStorage.getItem('wikiEdit_v1');
+      if(!raw) return;
+      const data = JSON.parse(raw);
+      nodesEditable().forEach((n,i)=> { if(data[i]!==undefined) n.innerHTML=data[i]; });
+      if(data._img) document.getElementById('wikiEdit-img').src = data._img;
+    }
+
+    toggleBtn.addEventListener('click', ()=> setEditing(toggleBtn.innerText==='Editar'));
+    saveBtn.addEventListener('click', saveAll);
+    resetBtn.addEventListener('click', e=>{
+      e.preventDefault();
+      localStorage.removeItem('wikiEdit_v1');
+      location.reload();
+    });
+
+    // Theme inputs
+    const themeMap = {'color-bg':'--bg','color-card':'--card','color-muted':'--muted','color-accent':'--accent','color-infobg':'--infobg'};
+    Object.keys(themeMap).forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el) return;
+      el.addEventListener('input', e=> document.documentElement.style.setProperty(themeMap[id], e.target.value));
+    });
+    document.getElementById('save-theme').addEventListener('click', ()=>{
+      Object.values(themeMap).forEach(v=>localStorage.setItem(v,getComputedStyle(document.documentElement).getPropertyValue(v)));
+      const b = document.getElementById('save-theme'); b.innerText='Tema salvo ✓';
+      setTimeout(()=>b.innerText='Salvar Tema',1100);
+    });
+
+    // Load theme & content
+    document.addEventListener('DOMContentLoaded', ()=>{
+      ['--bg','--card','--muted','--accent','--infobg'].forEach(v=>{
+        const val = localStorage.getItem(v);
+        if(val) document.documentElement.style.setProperty(v,val);
+      });
+      loadSaved();
+      setEditing(false);
+    });
+
+  })();
+  </script>
+</body>
+</html>

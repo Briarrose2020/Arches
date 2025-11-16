@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gavrill Ludovik — Fandom Wiki</title>
+  <style>
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --muted:#666;
+      --accent:#7b2b2b;
+      --infobg:#fff4f4;
+      --text:#111;
+    }
+    *{box-sizing:border-box}
+    body{font-family: "Segoe UI", Roboto, Arial, sans-serif;background:var(--bg);color:var(--text);margin:0;padding:28px}
+    .container{max-width:1100px;margin:0 auto}
+    header{display:flex;align-items:center;gap:18px;margin-bottom:10px}
+    h1{font-size:30px;margin:0}
+    .subtitle{color:var(--muted);font-size:13px}
+    .controls{margin-left:auto;display:flex;gap:10px;align-items:center}
+    .btn{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:8px 12px;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;font-size:13px}
+    .btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+    .page{display:flex;gap:24px;margin-top:14px;align-items:flex-start}
+    .main{flex:1}
+    .infobox{width:320px;background:var(--card);border:1px solid #e8dede;padding:14px;border-radius:8px;align-self:flex-start;box-shadow:0 6px 18px rgba(80,30,30,0.04);position:sticky;top:20px}
+    .infobox h2{margin:10px 0 6px;font-size:18px}
+    .infobox .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+    .section{background:var(--card);padding:14px;border-radius:8px;margin-bottom:14px;border:1px solid #f2e9e9}
+    .section h3{margin-top:0}
+    .image-box img{width:100%;border-radius:6px;display:block}
+    ul.clean{padding-left:1.2em;margin:0}
+    table.attrs{width:100%;border-collapse:collapse;margin-top:8px}
+    table.attrs td{border-top:1px solid #f7eef0;padding:8px}
+    .tags{font-size:13px;color:var(--muted)}
+    #theme-editor{position:fixed; bottom:18px; right:18px; background:var(--card); padding:14px; border-radius:10px; box-shadow:0 8px 30px rgba(10,20,40,0.06); z-index:999; width:220px; display:none}
+    #theme-editor h4{margin:0 0 8px;font-size:14px}
+    #theme-editor label{font-size:13px;color:var(--muted);display:block;margin-bottom:8px}
+    @media (max-width:980px){.page{flex-direction:column}.infobox{width:100%;position:static}}
+    a{color:var(--accent)}
+    hr{border:none;border-top:1px solid #f4e8e8;margin:12px 0}
+    body, h1, h2, h3, h4, h5, h6, p, li, a, span, div, table, tr, td, th {
+      font-family: "Georgia", "Times New Roman", serif;
+      font-style: italic;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1 contenteditable="false">Gavrill Ludovik</h1>
+        <div class="subtitle" contenteditable="false">“Eu não preciso de magia para proteger quem amo.” — Gavrill Ludovik</div>
+      </div>
+
+      <div class="controls">
+        <button id="toggle-edit" class="btn">Editar</button>
+        <button id="save-manual" class="btn">Salvar</button>
+        <a id="reset-btn" class="btn" href="#">Restaurar</a>
+      </div>
+    </header>
+
+    <div class="page">
+      <aside class="infobox">
+        <div class="image-box" style="text-align:center; margin-bottom:10px;">
+          <img id="tyson-img" src="https://cdn.discordapp.com/attachments/1430249832525598752/1439633373638299648/Picsart_25-11-16_11-04-48-088.jpg" alt="Gavrill Ludovik" style="object-fit:cover;border-radius:6px">
+        </div>
+
+        <h2>🕯️ Informações</h2>
+        <div class="meta">Nenhuma — humano comum</div>
+
+        <dl>
+          <dt>Nome completo</dt>
+          <dd data-editable="true">Gavrill Alexeievitch Ludovik</dd>
+          <dt>Afiliação</dt>
+          <dd data-editable="true">Nenhuma — humano comum</dd>
+          <dt>Espécie</dt>
+          <dd data-editable="true">Humano</dd>
+          <dt>Origem</dt>
+          <dd data-editable="true">São Petersburgo, Rússia</dd>
+          <dt>Alinhamento</dt>
+          <dd data-editable="true">Leal protetor</dd>
+          <dt>Títulos</dt>
+          <dd data-editable="true">Capitão Ludovik; O Escudo de Gelo</dd>
+          <dt>Status</dt>
+          <dd data-editable="true">Vivo</dd>
+        </dl>
+
+        <hr>
+
+        <h3>🔮 Pertences</h3>
+        <ul>
+          <li data-editable="true">Medalha de capitão do exército russo</li>
+          <li data-editable="true">Relógio de bolso antigo com foto de Sylvain criança</li>
+          <li data-editable="true">Casaco militar cinza, pesado e gasto</li>
+          <li data-editable="true">Espada cerimonial com runas entalhadas</li>
+          <li data-editable="true">Caneca de ferro esmaltada</li>
+        </ul>
+
+        <hr>
+        <h3>⚖️ Atributos</h3>
+        <table class="attrs">
+          <tr><td>Corpo</td><td><strong data-editable="true">8</strong></td></tr>
+          <tr><td>Saúde</td><td><strong data-editable="true">7</strong></td></tr>
+          <tr><td>Espírito</td><td><strong data-editable="true">6</strong></td></tr>
+          <tr><td>Postura</td><td><strong data-editable="true">7</strong></td></tr>
+          <tr><td>Mente</td><td><strong data-editable="true">6</strong></td></tr>
+          <tr><td>Vontade</td><td><strong data-editable="true">8</strong></td></tr>
+          <tr><td><strong>Total</strong></td><td><strong data-editable="true">42</strong></td></tr>
+        </table>
+      </aside>
+
+  <!-- MAIN -->
+      <main class="main">
+        <section class="section">
+          <h3>📜 História</h3>
+          <div data-editable="true">
+            <p><strong>Gavrill Ludovik</strong> nasceu em São Petersburgo, Rússia, em meio ao rigor e à disciplina militar. Tornou-se capitão de tropa e conquistou respeito tanto pela força bruta quanto pela lealdade inabalável a seus soldados. Apesar da aparência severa, Gavrill sempre foi guiado por uma profunda ternura — algo que o destino viria a testar de forma inesperada.</p>
+            <p>Durante uma missão em um inverno particularmente cruel, conheceu <strong>Tyson Arch</strong>, um feiticeiro italiano que o seduziu em meio à neve. A relação entre ambos foi intensa, conflituosa e mágica — literalmente. Por meio de um feitiço de conversão corporal, Tyson alterou a anatomia de Gavrill, permitindo o nascimento de <strong>Sylvain Phil Arch</strong>.</p>
+            <p>Mesmo após o feitiço, <strong>Gavrill manteve sua identidade como homem</strong>, tornando-se o primeiro caso canônico de um homem trans por magia no universo de Pourriture. Apesar de odiar a manipulação de Tyson, Gavrill permaneceu ao seu lado por laços de amor, dever e, em parte, maldição.</p>
+            <p>Quando Tyson retirou Sylvain de seus braços, Gavrill mergulhou em um período sombrio: abandonou o serviço militar e permaneceu isolado por oito meses, atormentado pela ausência do filho. Somente quando Sylvain lhe foi devolvido é que recuperou alguma paz. Atualmente, Gavrill vive entre Moscou e Marselha, viajando para visitar Sylvain e, ironicamente, dormindo na cama de Tyson sempre que o faz. Apesar de afirmar odiar o marido, ainda o chama de <strong>“dorogoy” (querido)</strong> e <strong>“milyy” (meu doce)</strong> em momentos de descuido.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>🎭 Personalidade</h3>
+          <div data-editable="true">
+            <p>Gavrill é a definição do paradoxo russo: frio por fora, ardente por dentro. Um homem de princípios militares, fala pouco, age rápido e protege ferozmente aqueles que ama. Apesar de sua aparência intimidadora, é <strong>profundamente carinhoso</strong> — o tipo de pessoa que prepara chá para consolar alguém e que chama o filho de <em>“mamochka moya”</em> ou <em>“solnyshe”</em> (meu sol).</p>
+            <p>Sua forma de amor é bruta, direta e cheia de pequenos gestos: ajustar o casaco de Sylvain, segurar a mão de Tyson em silêncio, ou apenas permanecer presente. Mesmo sem dons mágicos, possui um tipo de poder que nem mesmo Tyson domina — <strong>a força de permanecer humano</strong> em um mundo de feitiços e desordem.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>💬 Linguagem e Maneirismos</h3>
+          <div data-editable="true">
+            <ul class="clean">
+              <li>Fala inglês com <strong>forte sotaque russo</strong>, trocando sons e alongando palavras (“Rrrealy”, “vhat iz zis?”, “my milyy”).</li>
+              <li>Costuma usar diminutivos afetivos: <em>“dorogoy”</em>, <em>“solnyshe”</em>, <em>“malenkiy volk”</em>.</li>
+              <li>Ri com o corpo inteiro, inclinando-se para frente, e abraça com força o suficiente para levantar uma pessoa do chão.</li>
+              <li>Quando nervoso, cruza os braços e murmura palavrões em russo.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>🔮 Relações</h3>
+          <div data-editable="true">
+            <ul class="clean">
+              <li><strong>Tyson Arch:</strong> Esposo em ambos os ritos — civil e pagão. Relação marcada por amor, rancor e dependência emocional. Gavrill o chama de <em>“dorogoy”</em> mesmo quando jura odiá-lo.</li>
+              <li><strong>Sylvain Phil Arch:</strong> Filho biológico. É o centro de sua vida, o motivo de sua fé e de sua sanidade. Sylvain o chama de <em>Mamá</em>, e Gavrill responde sempre com orgulho e ternura.</li>
+              <li><strong>Gabriel Ludovik (identidade anterior):</strong> Parte de si que nunca negou. Gavrill reconhece a transformação mágica como um ponto de virada, mas recusa qualquer ideia de perda — considera-se “o mesmo homem, só mais completo.”</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>💀 Curiosidades</h3>
+          <div data-editable="true">
+            <ul class="clean">
+              <li>Chama Sylvain de <em>“mamochka moya”</em> (minha pequena mãe), como apelido carinhoso.</li>
+              <li>Odeia magia, mas tolera a de Sylvain por vê-la como “limpa e viva”.</li>
+              <li>Nunca tirou a aliança de casamento com Tyson, mesmo após anos vivendo separado.</li>
+              <li>Dorme na cama de Tyson quando visita Marselha, justificando com um simples: “É cama grande. E quente.”</li>
+              <li>O cheiro dele é descrito como uma mistura de fumaça, neve e couro.</li>
+              <li>Fala fluentemente russo, francês e apenas o necessário de inglês — com sotaque quase indecifrável.</li>
+              <li>É considerado uma lenda entre veteranos de Pourriture por ter enfrentado magos sem usar um único feitiço.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3>❤️ Personalidade em Resumo</h3>
+          <div data-editable="true">
+            <table class="attrs" aria-hidden="false">
+              <tr><td>Temperamento</td><td>Estoico e protetor</td></tr>
+              <tr><td>Linguagem</td><td>Direta, com forte sotaque e toques de humor seco</td></tr>
+              <tr><td>Força</td><td>Física e emocional; resiliente</td></tr>
+              <tr><td>Fraqueza</td><td>O coração — Sylvain e Tyson</td></tr>
+              <tr><td>Valores</td><td>Lealdade, verdade e amor incondicional</td></tr>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer com links externos -->
+    <footer>
+      <div class="tags">Categoria: Personagens | Humano | Rússia</div>
+      <div style="margin-top:8px">Página gerada automaticamente. Edite livremente usando o modo de edição.</div>
+
+      <hr>
+
+      <div class="section" style="padding:12px;border-radius:8px;">
+        <h3>🔗 Links externos</h3>
+        <ul>
+          <li><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Petersburgo" target="_blank" rel="noopener">São Petersburgo — Wikipédia</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Ex%C3%A9rcito_Russo" target="_blank" rel="noopener">Exército Russo — Wikipédia</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Casaco" target="_blank" rel="noopener">Casaco — Wikipédia</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+      <main class="main">
+        <!-- conteúdo das seções mantém igual ao seu arquivo original -->
+      </main>
+    </div>
+
+    <!-- theme editor panel -->
+    <div id="theme-editor">
+      <h4>🎨 Ajustar Cores</h4>
+      <label>Fundo: <input id="color-bg" type="color" value="#f6f7f9"></label>
+      <label>Cartões: <input id="color-card" type="color" value="#ffffff"></label>
+      <label>Texto Secundário: <input id="color-muted" type="color" value="#666666"></label>
+      <label>Acento: <input id="color-accent" type="color" value="#7b2b2b"></label>
+      <label>Infobox: <input id="color-infobg" type="color" value="#fff4f4"></label>
+      <div style="margin-top:8px;text-align:right">
+        <button id="save-theme" class="btn primary">Salvar Tema</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+  (function(){
+    const toggleBtn = document.getElementById('toggle-edit');
+    const saveBtn = document.getElementById('save-manual');
+    const resetBtn = document.getElementById('reset-btn');
+    const themePanel = document.getElementById('theme-editor');
+
+    function nodesEditable(){ return document.querySelectorAll('[data-editable="true"]'); }
+
+    function setEditing(on){
+      nodesEditable().forEach(n=> n.setAttribute('contenteditable', on?'true':'false'));
+      toggleBtn.innerText = on ? 'Fechar edição' : 'Editar';
+      themePanel.style.display = on ? 'block' : 'none';
+    }
+
+    function saveAll(){
+      const out = {};
+      nodesEditable().forEach((n,i)=> out[i]=n.innerHTML);
+      out._img = document.getElementById('tyson-img').src;
+      localStorage.setItem('gavrill_v1', JSON.stringify(out));
+      saveBtn.innerText = 'Salvo ✓';
+      setTimeout(()=> saveBtn.innerText='Salvar',1100);
+    }
+
+    function loadSaved(){
+      const raw = localStorage.getItem('gavrill_v1');
+      if(!raw) return;
+      const data = JSON.parse(raw);
+      nodesEditable().forEach((n,i)=> { if(data[i]!==undefined) n.innerHTML=data[i]; });
+      if(data._img) document.getElementById('tyson-img').src = data._img;
+    }
+
+    toggleBtn.addEventListener('click', ()=> setEditing(toggleBtn.innerText==='Editar'));
+    saveBtn.addEventListener('click', saveAll);
+    resetBtn.addEventListener('click', e=>{
+      e.preventDefault();
+      localStorage.removeItem('gavrill_v1');
+      location.reload();
+    });
+
+    // Theme inputs
+    const themeMap = {'color-bg':'--bg','color-card':'--card','color-muted':'--muted','color-accent':'--accent','color-infobg':'--infobg'};
+    Object.keys(themeMap).forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el) return;
+      el.addEventListener('input', e=> document.documentElement.style.setProperty(themeMap[id], e.target.value));
+    });
+    document.getElementById('save-theme').addEventListener('click', ()=>{
+      Object.values(themeMap).forEach(v=>localStorage.setItem(v,getComputedStyle(document.documentElement).getPropertyValue(v)));
+      const b = document.getElementById('save-theme'); b.innerText='Tema salvo ✓';
+      setTimeout(()=>b.innerText='Salvar Tema',1100);
+    });
+
+    // Load theme & content
+    document.addEventListener('DOMContentLoaded', ()=>{
+      ['--bg','--card','--muted','--accent','--infobg'].forEach(v=>{
+        const val = localStorage.getItem(v);
+        if(val) document.documentElement.style.setProperty(v,val);
+      });
+      loadSaved();
+      setEditing(false);
+    });
+
+  })();
+  </script>
+</body>
+</html>
+
