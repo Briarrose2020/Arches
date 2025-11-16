@@ -67,7 +67,7 @@
       <!-- INF OBOX -->
       <aside class="infobox" aria-label="Infobox de tyson Arch">
         <div class="image-box" style="text-align:center; margin-bottom:10px;">
-          <img id="tyson-img" src="https://cdn.discordapp.com/attachments/1430249832525598752/1439622551029551114/Picsart_25-11-16_10-46-02-475.jpg" alt="tyson arch" style="object-fit:cover;border-radius:6px">
+          <img id="tyson-img" src="https://i.imgur.com/uoA7Rw5.jpeg" alt="tyson arch" style="object-fit:cover;border-radius:6px">
         </div>
 
         <h2>🕯️ Informações</h2>
@@ -207,24 +207,17 @@
     </footer>
   </div>
 
-  <main class="main">
-        <!-- conteúdo das seções mantém igual ao seu arquivo original -->
-      </main>
+  <!-- theme editor panel -->
+  <div id="theme-editor">
+    <h4>🎨 Ajustar Cores</h4>
+    <label>Fundo: <input id="color-bg" type="color" value="#f6f7f9"></label>
+    <label>Cartões: <input id="color-card" type="color" value="#ffffff"></label>
+    <label>Texto Secundário: <input id="color-muted" type="color" value="#666666"></label>
+    <label>Acento: <input id="color-accent" type="color" value="#7b2b2b"></label>
+    <label>Infobox: <input id="color-infobg" type="color" value="#fff4f4"></label>
+    <div style="margin-top:8px;text-align:right">
+      <button id="save-theme" class="btn primary">Salvar Tema</button>
     </div>
-
-    <!-- theme editor panel -->
-    <div id="theme-editor">
-      <h4>🎨 Ajustar Cores</h4>
-      <label>Fundo: <input id="color-bg" type="color" value="#f6f7f9"></label>
-      <label>Cartões: <input id="color-card" type="color" value="#ffffff"></label>
-      <label>Texto Secundário: <input id="color-muted" type="color" value="#666666"></label>
-      <label>Acento: <input id="color-accent" type="color" value="#7b2b2b"></label>
-      <label>Infobox: <input id="color-infobg" type="color" value="#fff4f4"></label>
-      <div style="margin-top:8px;text-align:right">
-        <button id="save-theme" class="btn primary">Salvar Tema</button>
-      </div>
-    </div>
-
   </div>
 
   <script>
@@ -267,7 +260,6 @@
       location.reload();
     });
 
-    // Theme inputs
     const themeMap = {'color-bg':'--bg','color-card':'--card','color-muted':'--muted','color-accent':'--accent','color-infobg':'--infobg'};
     Object.keys(themeMap).forEach(id=>{
       const el=document.getElementById(id);
@@ -280,7 +272,6 @@
       setTimeout(()=>b.innerText='Salvar Tema',1100);
     });
 
-    // Load theme & content
     document.addEventListener('DOMContentLoaded', ()=>{
       ['--bg','--card','--muted','--accent','--infobg'].forEach(v=>{
         const val = localStorage.getItem(v);
