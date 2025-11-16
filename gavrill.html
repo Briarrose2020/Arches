@@ -65,7 +65,7 @@
     <div class="page">
       <aside class="infobox">
         <div class="image-box" style="text-align:center; margin-bottom:10px;">
-          <img id="gavrill-img" src="https://cdn.discordapp.com/attachments/1430249832525598752/1439633373638299648/Picsart_25-11-16_11-04-48-088.jpg" alt="gavrill ludovik" style="object-fit:cover;border-radius:6px">
+          <img id="gavrill-img" src="https://cdn.discordapp.com/attachments/1430249832525598752/1439633373638299648/Picsart_25-11-16_11-04-48-088.jpg" alt="Gavrill Ludovik" style="object-fit:cover;border-radius:6px">
         </div>
 
         <h2>🕯️ Informações</h2>
@@ -241,7 +241,7 @@
     function saveAll(){
       const out = {};
       nodesEditable().forEach((n,i)=> out[i]=n.innerHTML);
-      out._img = document.getElementById('tyson-img').src;
+      out._img = document.getElementById('gavrill-img').src;
       localStorage.setItem('gavrill_v1', JSON.stringify(out));
       saveBtn.innerText = 'Salvo ✓';
       setTimeout(()=> saveBtn.innerText='Salvar',1100);
@@ -252,7 +252,7 @@
       if(!raw) return;
       const data = JSON.parse(raw);
       nodesEditable().forEach((n,i)=> { if(data[i]!==undefined) n.innerHTML=data[i]; });
-      if(data._img) document.getElementById('tyson-img').src = data._img;
+      if(data._img) document.getElementById('gavrill-img').src = data._img;
     }
 
     toggleBtn.addEventListener('click', ()=> setEditing(toggleBtn.innerText==='Editar'));
